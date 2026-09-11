@@ -4,9 +4,11 @@ theme: just-the-docs
 
 url: https://garfinjm.github.io/pgcoe-data-release/
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+logo: "/docs/media/pgcoe-network-graphic-element.png"
+favicon_ico: "/docs/media/pgcoe-network-graphic-element.png"
 
+aux_links:
+  PGCoE Main Site: https://pgcoe.github.io/
 
 callouts:
   mitigation:

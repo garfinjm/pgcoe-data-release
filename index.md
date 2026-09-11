@@ -36,10 +36,10 @@ To protect individual privacy, data submitters must ensure that no information p
 
 {: .mitigation } 
 > Reduce detail of identifying metadata fields in cases where that data is likely to be identifying (ex. submit collection location to state level instead of county level for sparsely populated counties.)
-
+>
 > {: .cost }
 > > This strategy reduces the resolution available for future investigations which can make some genomic epidemiology techniques less effective or impossible.
-
+>
 > {: .prevalence} 
 > > Varies by metadata type, common for geographic information.
 
