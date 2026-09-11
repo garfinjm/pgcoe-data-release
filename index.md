@@ -42,60 +42,88 @@ To protect individual privacy, data submitters must ensure that no information p
   > > {: .prevalence} 
   > > > Varies by metadata type, common for geographic information.
 
-
----
----
-
-
-
-
-  - *Mitigation Strategy: Withhold metadata fields in cases where that data is likely to be identifying and there is a* ***substantial*** *risk to the organization submitting the data or the individual the data was generated from. In these cases, best practice is to indicate that the data was collected but not shared publicly by using a term like “Not Given” or “Withheld”.*
-    - *Cost: This strategy removes data fields available for future investigations which can make some genomic epidemiology techniques less effective or impossible.*
-    - *Prevalence: Common for some highly identifying metadata fields (ex. name). Generally, it is preferable to reduce detail (see above) rather than withhold data entirely.*
-
-
-
-
-
-
-
-
-
-
+> {: .mitigation } 
+  > > Withhold metadata fields in cases where that data is likely to be identifying and there is a **substantial** risk to the organization submitting the data or the individual the data was generated from. In these cases, best practice is to indicate that the data was collected but not shared publicly by using a term like “Not Given” or “Withheld”.
+  > >
+  > > {: .cost }
+  > > > This strategy removes data fields available for future investigations which can make some genomic epidemiology techniques less effective or impossible.
+  > >
+  > > {: .prevalence} 
+  > > > Common for some highly identifying metadata fields (ex. name). Generally, it is preferable to reduce detail (see above) rather than withhold data entirely.
 
 - **Some sampling, sequencing, and data processing methods may capture human genetic data**: The type of sample that has been sequenced influences the data handling practices that are best suited to data submission. Laboratories should consider the extent to which the target organism is isolated or enriched relative to any human genetic material when designing their requirements for data processing and assessment prior to submission.
-  - *Mitigation Strategy: Use methods (like isolating or enriching for the target pathogen) which minimize off-target sequencing of human material.*
-    - *Cost: These methods often introduce bias in what is sequenced and often do not completely eliminate human genomic data.*
-    - *Prevalence: Very common when sequencing directly from clinical specimens without an isolation step (ex. targeted tiled amplicon sequencing of a virus from a nasal swab).*
-  - *Mitigation Strategy: Apply in-silico dehosting software to data before public sharing.*
-    - *Cost: Dehosting software is not perfect; it may leave small amounts of human genomic data and may remove small amounts of pathogen data from the dataset.*
-    - *Prevalence: Very common in methods (ex. untargeted genomic sequencing) which produce a large amount of human genomic bycatch. Not typically used when an organism is sequenced from culture.*
-  - *Mitigation Strategy: Share data types which are less likely to contain human data (ex. assemblies instead of raw reads or aligned reads instead of raw reads)*
-    - *Cost: Limits some analytical approaches. May remove meaningful data if assembly is not high quality. This is a good choice if sharing reads is not an option.*
-    - *Prevalence: Anyone have thoughts?*
+> {: .mitigation } 
+  > > Use methods (like isolating or enriching for the target pathogen) which minimize off-target sequencing of human material.
+  > >
+  > > {: .cost }
+  > > > These methods often introduce bias in what is sequenced and often do not completely eliminate human genomic data.
+  > >
+  > > {: .prevalence} 
+  > > > Very common when sequencing directly from clinical specimens without an isolation step (ex. targeted tiled amplicon sequencing of a virus from a nasal swab).
+> {: .mitigation } 
+  > > Apply in-silico dehosting software to data before public sharing.
+  > >
+  > > {: .cost }
+  > > > Dehosting software is not perfect; it may leave small amounts of human genomic data and may remove small amounts of pathogen data from the dataset.
+  > >
+  > > {: .prevalence} 
+  > > > Very common in methods (ex. untargeted genomic sequencing) which produce a large amount of human genomic bycatch. Not typically used when an organism is sequenced from culture.
+> {: .mitigation } 
+  > > Share data types which are less likely to contain human data (ex. assemblies instead of raw reads or aligned reads instead of raw reads)
+  > >
+  > > {: .cost }
+  > > > Limits some analytical approaches. May remove meaningful data if assembly is not high quality. This is a good choice if sharing reads is not an option.
+  > >
+  > > {: .prevalence} 
+  > > > Anyone have thoughts?
 
 ## Concern 2: Loss of control around how data are used, analyzed, and communicated after public release.
 
 The release of genomic data, and analysis by non-public health entities, can shape public perception of risk in an emerging situation, affect trust in health authorities, and impact the effectiveness of public health responses. Public health agencies must navigate the complexities of timely data sharing while ensuring that the information is properly contextualized and accurately communicated to prevent misinformation and inaccurate interpretations. Engaging with communications staff and establishing clear protocols for data release can help mitigate the risks associated with public narrative management. By strategically timing the release of genomic data and preparing for potential media inquiries, public health agencies can provide the most accurate information to the public and maintain confidence in public health initiatives, and therefore more effectively respond to public health threats.
 
 - **Sequence data with meaningful ramifications for public health, released without accompanying public messaging, may give the appearance of an uncoordinated or unwary public health agency.** The most common example of this is a laboratory discovering a pathogen not previously identified within their agencies’ jurisdiction which could have an important public health impact.
-  - *Mitigation Strategy:* *Work with internal agency communications staff to create timely press releases to ensure that messaging is clear, accurate, and aligned with the public health goals of the agency.*
-    - *Cost: Intra-agency communications can delay release of data.*
-    - *Prevalence: Extremely common for data releases that are likely to be newsworthy. Not as common for low impact or routine projects.*
-  - *Mitigation Strategy:**Engage with external stakeholders (local health departments, policymakers, community leaders, etc.) early and often in discussions around data release. By providing these stakeholders with advance notice and context about the data, public health agencies can prepare them to address public inquiries and concerns effectively.*
-    - *Cost: Few costs to early engagement with stakeholders.*
-    - *Prevalence: Varies by project and setting.*
-  - *Mitigation Strategy:**Prepare and review data sharing and communication plans when collaborating with academic or private partners prior to public release of data. This collaborative review can help ensure the correct interpretation and the narrative around the findings of the investigation is well-crafted to reduce the risk of miscommunication.*
-    - *Cost: Intra-agency communication can delay release of data.*
-    - *Prevalence: Varies by project and setting.*
+> {: .mitigation } 
+  > > Work with internal agency communications staff to create timely press releases to ensure that messaging is clear, accurate, and aligned with the public health goals of the agency.
+  > >
+  > > {: .cost }
+  > > > Intra-agency communications can delay release of data.
+  > >
+  > > {: .prevalence} 
+  > > > Extremely common for data releases that are likely to be newsworthy. Not as common for low impact or routine projects.
+> {: .mitigation } 
+  > > Engage with external stakeholders (local health departments, policymakers, community leaders, etc.) early and often in discussions around data release. By providing these stakeholders with advance notice and context about the data, public health agencies can prepare them to address public inquiries and concerns effectively.
+  > >
+  > > {: .cost }
+  > > > Few costs to early engagement with stakeholders.
+  > >
+  > > {: .prevalence} 
+  > > > Varies by project and setting.
+> {: .mitigation } 
+  > > Prepare and review data sharing and communication plans when collaborating with academic or private partners prior to public release of data. This collaborative review can help ensure the correct interpretation and the narrative around the findings of the investigation is well-crafted to reduce the risk of miscommunication.
+  > >
+  > > {: .cost }
+  > > > Intra-agency communication can delay release of data.
+  > >
+  > > {: .prevalence} 
+  > > > Varies by project and setting.
 - **Sequence data released publicly without messaging may not be interpreted correctly.** During an infectious disease outbreak investigation, sequencing data is just one of the many types of laboratory and epidemiological data collected by a public health agency. It’s not unreasonable to expect that an external observer looking only at the publicly shared sequence data could unintentionally (or intentionally in the case of a bad actor) come to an incorrect conclusion.
-  - *Mitigation Strategy: Build internal genomic analysis capacity so that results and interpretation can be shared in tandem quickly after data generation. While rapid data release is a significant public service, communicating findings from analysis of those data is usually more useful and can build trust that information is being shared as it is learned.*
-    - *Cost: Genomic analysis capacity personnel and infrastructure both carry substantial financial costs.*
-    - *Prevalence: Varies, well-resourced organizations are more likely to have existing staff with the necessary expertise.*
+> {: .mitigation } 
+  > > Build internal genomic analysis capacity so that results and interpretation can be shared in tandem quickly after data generation. While rapid data release is a significant public service, communicating findings from analysis of those data is usually more useful and can build trust that information is being shared as it is learned.
+  > >
+  > > {: .cost }
+  > > > Genomic analysis capacity personnel and infrastructure both carry substantial financial costs.
+  > >
+  > > {: .prevalence} 
+  > > > Varies, well-resourced organizations are more likely to have existing staff with the necessary expertise.
 - **Agencies sharing data in real-time risk being “scooped” on their publications by external groups analyzing data.** While this is a more common concern for academic laboratories, public health agencies may hesitate to release genomic data due to concerns that outside groups may analyze the data before the data generators and publish their findings without crediting and including data generators at the public health agency.
-  - *Mitigation Strategy: Use a resource like* [*Pathoplexus*](https://pathoplexus.org/) *for real-time data submission allowing the public to access the data with stricter usage conditions for a limited period until data is released more permissively on a resource like NCBI.*
-    - *Cost: Setup time for a new submission pathway.*
-    - *Prevalence: Somewhat common, though not preferred compared to submitting to a more open repository.*
+> {: .mitigation } 
+  > > Use a resource like* [*Pathoplexus*](https://pathoplexus.org/) *for real-time data submission allowing the public to access the data with stricter usage conditions for a limited period until data is released more permissively on a resource like NCBI.
+  > >
+  > > {: .cost }
+  > > > Setup time for a new submission pathway.
+  > >
+  > > {: .prevalence} 
+  > > > Somewhat common, though not preferred compared to submitting to a more open repository.
 
 ## Concern 3: Inaccurate or misleading data could be released.
 
@@ -104,32 +132,62 @@ Ensuring confidence in data is essential for maintaining trust, supporting sound
 While the best practice is to release data as soon as possible after sequencing, delays in data release may be justified when additional scrutiny is required to meet quality standards aligned with the intended use of the data. These delays can be reduced by establishing clear standards, protocols, and validated workflows for common or anticipated data types in advance. Formal QA validation—often requiring empirical measures of precision and accuracy—is frequently mandated prior to release, but familiarity with institutional quality management systems and proactive workflow validation can significantly streamline this process.
 
 - **Data released without sufficient QA could be incorrect.** Inaccurate or incomplete data can lead the public or organizations to make inaccurate conclusions or poor decisions. Before release all data should be certified as adhering to internal quality standards and protocols. In some cases, this could delay the release of data. Depending on the magnitude of the public health impact caused by sharing data, it may be appropriate to deviate from standard protocols after discussion with quality personnel.
-  - *Mitigation Strategy: Ensure staff are trained and familiar with QA standards so they can respond to emergency situations efficiently.*
-    - *Costs: Training time for staff to learn and maintain familiarity with QA standards.*
-    - *Prevalence: Very common in labs performing laboratory developed tests. It is also generally good practice to build and maintain an understanding of QA standards and principles among staff developing or implementing new tests.*
-  - *Mitigation Strategy: Ensure that agency QA standards are well documented so that staff can be trained on those standards.*
-    - *Costs: Time to develop and formalize QA standards.*
-    - *Prevalence: Standard practice in regulated environments.*
+> {: .mitigation } 
+  > > Ensure staff are trained and familiar with QA standards so they can respond to emergency situations efficiently.
+  > >
+  > > {: .cost }
+  > > > Training time for staff to learn and maintain familiarity with QA standards.
+  > >
+  > > {: .prevalence} 
+  > > > Very common in labs performing laboratory developed tests. It is also generally good practice to build and maintain an understanding of QA standards and principles among staff developing or implementing new tests.
+> {: .mitigation } 
+  > > Ensure that agency QA standards are well documented so that staff can be trained on those standards.
+  > >
+  > > {: .cost }
+  > > > Time to develop and formalize QA standards.
+  > >
+  > > {: .prevalence} 
+  > > > Standard practice in regulated environments.
 - **Established QA standards cannot be met due to lack of reference materials**. Timely assessment of data quality can be challenging when there are limited or no standard reference materials that can be used for comparison. This is often the case when attempting to release data from a rare, emergent, or novel disease.
-  - *Mitigation Strategy: Compare the results from multiple independent methods performed internally or by one or more external institutions (e.g., confirmation testing by CDC).*
-    - *Costs: Time to identify and implement orthogonal methods or coordinate with external institutions.*
-    - *Prevalence: Very common during development in the absence of reference material.*
+> {: .mitigation } 
+  > > Compare the results from multiple independent methods performed internally or by one or more external institutions (e.g., confirmation testing by CDC).
+  > >
+  > > {: .cost }
+  > > > Time to identify and implement orthogonal methods or coordinate with external institutions.
+  > >
+  > > {: .prevalence} 
+  > > > Very common during development in the absence of reference material.
 - **Perceived data quality could change as new data emerges.** In developing situations, the perceived quality of data may change as new information becomes available.
-  - *Mitigation Strategy: Ongoing communication with stakeholders is critical not only for newly generated data, but also for previously communicated data and findings.*
-    - *Costs: Minimal when ongoing communication is happening anyway.*
-    - *Prevalence: Common.*
-  - *Mitigation Strategy:**Be prepared to update publicly shared data and have a plan to announce any updates to stakeholders.*
-    - *Costs: Time to prepare new messaging and to update data.*
-    - *Prevalence: Common.*
+> {: .mitigation } 
+  > > Ongoing communication with stakeholders is critical not only for newly generated data, but also for previously communicated data and findings.
+  > >
+  > > {: .cost }
+  > > > Minimal when ongoing communication is happening anyway.
+  > >
+  > > {: .prevalence} 
+  > > > Common.
+> {: .mitigation } 
+  > > Be prepared to update publicly shared data and have a plan to announce any updates to stakeholders.
+  > >
+  > > {: .cost }
+  > > > Time to prepare new messaging and to update data.
+  > >
+  > > {: .prevalence} 
+  > > > Common.
 
 ## Concern 4: Public data release may be restricted and/or required by existing contracts or agreements.
 
 In addition to institutional factors that must be considered before public data release, there are typically extra-institutional factors to consider as well. Before a new type of data is released publicly, it is important to consider any restrictions on data sharing that may be imposed by laws or legal agreements with other institutions (including funding agencies). Conversely, data sharing might be required by outside institutions, funding agencies, and peer-reviewed journals. Public health agencies should be aware of all these external factors that can shape data sharing and release.
 
 - **Funding agencies may require release of data**. Different jurisdictions and funding bodies may have varying requirements for what data can or must be publicly shared.
-  - *Mitigation Strategy:* *When applying for funding, make sure the data sharing requirements are compatible with your agency policies, goals, and mission.*
-    - *Costs: None.*
-    - *Prevalence: Common.*
+ > {: .mitigation } 
+  > > When applying for funding, make sure the data sharing requirements are compatible with your agency policies, goals, and mission.
+  > >
+  > > {: .cost }
+  > > > None.
+  > >
+  > > {: .prevalence} 
+  > > > Common.
 - **Data generated under Institutional Review Board (IRB) oversight or covered by Health Insurance Portability and Accountability Act (HIPAA) have limitations on public data sharing.** Large swaths of work done in public health agencies are exempt from IRB and HIPAA oversight. However, organizations or activities covered by IRB or HIPAA are subject to additional restrictions on data sharing. IRB provisions must be made to address the use of residual specimens for additional studies and management of any clinically relevant results identified by research testing. These regulations typically have specific rules about the kinds and resolution of data that can be shared depending on the conditions under which they are released.
 - **Uncertainty about releasing sequence data from Select Agent organisms.** The Federal Select Agent Program does not (as of mid-2026) regulate digital representations of nucleic acid sequences and select agent sequences can be shared publicly. However, would-be submitters should carefully consider whether sharing select agent sequencing data may impact potential criminal investigations, as in cases of bioterrorism. Comprehensive information on the Federal Select Agent Program is available at [selectagents.gov](https://aphl8515.sharepoint.com/sites/PGCOERBSC2/Shared%20Documents/General/selectagents.gov).
 - **Journals require data to be shared for publication.** Reporting findings in scientific journals requires public release of genomic data and a minimal set of associated metadata, while generally redacting data that are not necessary for the following purposes:
@@ -143,19 +201,39 @@ Outside of the legal, logistical, and institutional barriers that might hinder a
 PGCOE Response Base Working Group has created [a website to address the most common technical hurdles](https://Update.this.url.eventually) to sharing sequencing data publicly on NCBI. Organizations are strongly encouraged to use this resource in addition to NCBI’s first party documentation to address technical hurdles encountered during data submission.
 
 - **Staff are not familiar with data submission process.** Public data sharing repositories like [NCBI](https://www.ncbi.nlm.nih.gov/) and [Pathoplexus](https://pathoplexus.org/) manage users and store data in structures that are not necessarily intuitive to new users. This often slows adoption of these resources by new submitters.
-  - *Mitigation Strategy: Ensure staff are trained and familiar with repositories’ structure and upload procedure so they can respond to emergency situations effectively.*
-    - *Costs: Time to train and maintain competency of staff.*
-    - *Prevalence: Very rare.*
-  - *Mitigation Strategy: Utilize existing tools to make data upload easier (ex.* [*SeqSender*](https://github.com/CDCgov/seqsender)*,* [*TOSTADAS*](https://github.com/CDCgov/tostadas)*, etc.)*
-    - *Costs: Upfront cost in time to learn and implement another piece of software (this is offset over time).*
-    - *Prevalence: Common in settings where routine or high-volume uploads are required.*
+> {: .mitigation } 
+  > > Ensure staff are trained and familiar with repositories’ structure and upload procedure so they can respond to emergency situations effectively.
+  > >
+  > > {: .cost }
+  > > > Time to train and maintain competency of staff.
+  > >
+  > > {: .prevalence} 
+  > > > Very rare.
+> {: .mitigation } 
+  > > Utilize existing tools to make data upload easier (ex.* [*SeqSender*](https://github.com/CDCgov/seqsender)*,* [*TOSTADAS*](https://github.com/CDCgov/tostadas)*, etc.)
+  > >
+  > > {: .cost }
+  > > > Upfront cost in time to learn and implement another piece of software (this is offset over time).
+  > >
+  > > {: .prevalence} 
+  > > > Common in settings where routine or high-volume uploads are required.
 - **Formatting sequence metadata for upload is labor intensive.** Public data sharing repositories require that sequence metadata be formatted and stored in specific ways to facilitate smooth data transfers. Organizing, formatting, and transforming the required data is labor intensive, but essential to making uploaded data useful.
-  - *Mitigation Strategy: Develop flexible internal tooling and scripts to convert sequence metadata to be compatible with submission processes.*
-    - *Costs: Often considerable development time to create scripts and training time to teach staff how to use those scripts.*
-    - *Prevalence: Very common for frequent data submitters, less common in agencies with lower throughput.*
-  - *Mitigation Strategy: Foster consistency in how data is stored and formatted within the organization.*
-    - *Costs: Time spent convincing staff that consistency is worthwhile. Infrastructure costs for more complex data storage systems.*
-    - *Prevalence: Varies.*
+> {: .mitigation } 
+  > > Develop flexible internal tooling and scripts to convert sequence metadata to be compatible with submission processes.
+  > >
+  > > {: .cost }
+  > > > Often considerable development time to create scripts and training time to teach staff how to use those scripts.
+  > >
+  > > {: .prevalence} 
+  > > > Very common for frequent data submitters, less common in agencies with lower throughput.
+> {: .mitigation } 
+  > > Foster consistency in how data is stored and formatted within the organization.
+  > >
+  > > {: .cost }
+  > > > Time spent convincing staff that consistency is worthwhile. Infrastructure costs for more complex data storage systems.
+  > >
+  > > {: .prevalence} 
+  > > > Varies.
 
 ## Conclusion
 
