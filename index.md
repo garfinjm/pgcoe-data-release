@@ -34,14 +34,14 @@ To protect individual privacy, data submitters must ensure that no information p
 - **Organism and population characteristics can allow reidentification of an individual through sequence metadata:** In highly rare pathogens or sparsely populated geographic regions, data including collection date, facility, state, or age are more identifying than for common pathogens or densely populated areas. These sequence metadata should be considered carefully prior to sharing. It is important to remember that as metadata provided with sequencing data is reduced, the public health utility of the sequence data is also reduced. Some metadata (for example sample collection dates) are extremely important and should not be obscured or withheld without good reason.
 
 
-{: .mitigation } 
-> Reduce detail of identifying metadata fields in cases where that data is likely to be identifying (ex. submit collection location to state level instead of county level for sparsely populated counties.)
->
-> {: .cost }
-> > This strategy reduces the resolution available for future investigations which can make some genomic epidemiology techniques less effective or impossible.
->
-> {: .prevalence} 
-> > Varies by metadata type, common for geographic information.
+- {: .mitigation } 
+    > Reduce detail of identifying metadata fields in cases where that data is likely to be identifying (ex. submit collection location to state level instead of county level for sparsely populated counties.)
+    >
+    > {: .cost }
+    > > This strategy reduces the resolution available for future investigations which can make some genomic epidemiology techniques less effective or impossible.
+    >
+    > {: .prevalence} 
+    > > Varies by metadata type, common for geographic information.
 
 
 ---
