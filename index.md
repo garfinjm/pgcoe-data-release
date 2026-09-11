@@ -41,7 +41,6 @@ To protect individual privacy, data submitters must ensure that no information p
   > >
   > > {: .prevalence} 
   > > > Varies by metadata type, common for geographic information.
-
 > {: .mitigation } 
   > > Withhold metadata fields in cases where that data is likely to be identifying and there is a **substantial** risk to the organization submitting the data or the individual the data was generated from. In these cases, best practice is to indicate that the data was collected but not shared publicly by using a term like “Not Given” or “Withheld”.
   > >
@@ -75,7 +74,7 @@ To protect individual privacy, data submitters must ensure that no information p
   > > > Limits some analytical approaches. May remove meaningful data if assembly is not high quality. This is a good choice if sharing reads is not an option.
   > >
   > > {: .prevalence} 
-  > > > Anyone have thoughts?
+  > > > Required by some programs, generally the two strategies above are preferred.
 
 ## Concern 2: Loss of control around how data are used, analyzed, and communicated after public release.
 
@@ -115,6 +114,7 @@ The release of genomic data, and analysis by non-public health entities, can sha
   > >
   > > {: .prevalence} 
   > > > Varies, well-resourced organizations are more likely to have existing staff with the necessary expertise.
+
 - **Agencies sharing data in real-time risk being “scooped” on their publications by external groups analyzing data.** While this is a more common concern for academic laboratories, public health agencies may hesitate to release genomic data due to concerns that outside groups may analyze the data before the data generators and publish their findings without crediting and including data generators at the public health agency.
 > {: .mitigation } 
   > > Use a resource like* [*Pathoplexus*](https://pathoplexus.org/) *for real-time data submission allowing the public to access the data with stricter usage conditions for a limited period until data is released more permissively on a resource like NCBI.
@@ -148,6 +148,7 @@ While the best practice is to release data as soon as possible after sequencing,
   > >
   > > {: .prevalence} 
   > > > Standard practice in regulated environments.
+
 - **Established QA standards cannot be met due to lack of reference materials**. Timely assessment of data quality can be challenging when there are limited or no standard reference materials that can be used for comparison. This is often the case when attempting to release data from a rare, emergent, or novel disease.
 > {: .mitigation } 
   > > Compare the results from multiple independent methods performed internally or by one or more external institutions (e.g., confirmation testing by CDC).
@@ -188,6 +189,7 @@ In addition to institutional factors that must be considered before public data 
   > >
   > > {: .prevalence} 
   > > > Common.
+
 - **Data generated under Institutional Review Board (IRB) oversight or covered by Health Insurance Portability and Accountability Act (HIPAA) have limitations on public data sharing.** Large swaths of work done in public health agencies are exempt from IRB and HIPAA oversight. However, organizations or activities covered by IRB or HIPAA are subject to additional restrictions on data sharing. IRB provisions must be made to address the use of residual specimens for additional studies and management of any clinically relevant results identified by research testing. These regulations typically have specific rules about the kinds and resolution of data that can be shared depending on the conditions under which they are released.
 - **Uncertainty about releasing sequence data from Select Agent organisms.** The Federal Select Agent Program does not (as of mid-2026) regulate digital representations of nucleic acid sequences and select agent sequences can be shared publicly. However, would-be submitters should carefully consider whether sharing select agent sequencing data may impact potential criminal investigations, as in cases of bioterrorism. Comprehensive information on the Federal Select Agent Program is available at [selectagents.gov](https://aphl8515.sharepoint.com/sites/PGCOERBSC2/Shared%20Documents/General/selectagents.gov).
 - **Journals require data to be shared for publication.** Reporting findings in scientific journals requires public release of genomic data and a minimal set of associated metadata, while generally redacting data that are not necessary for the following purposes:
@@ -217,6 +219,7 @@ PGCOE Response Base Working Group has created [a website to address the most com
   > >
   > > {: .prevalence} 
   > > > Common in settings where routine or high-volume uploads are required.
+
 - **Formatting sequence metadata for upload is labor intensive.** Public data sharing repositories require that sequence metadata be formatted and stored in specific ways to facilitate smooth data transfers. Organizing, formatting, and transforming the required data is labor intensive, but essential to making uploaded data useful.
 > {: .mitigation } 
   > > Develop flexible internal tooling and scripts to convert sequence metadata to be compatible with submission processes.
