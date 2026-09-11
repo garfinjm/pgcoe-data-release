@@ -32,10 +32,7 @@ There is no one-size-fits-all plan for sharing pathogen genomic data. The techni
 To protect individual privacy, data submitters must ensure that no information provided to public databases can lead to identification of a specific person. This includes removing directly identifying information (e.g. names) as well as metadata or genomic data that could enable identification through indirect means. Appropriate data handling depends on many factors, including pathogen characteristics, host population, sampling methods, sequencing techniques, and the data format intended for submission.
 
 - **Organism and population characteristics can allow reidentification of an individual through sequence metadata:** In highly rare pathogens or sparsely populated geographic regions, data including collection date, facility, state, or age are more identifying than for common pathogens or densely populated areas. These sequence metadata should be considered carefully prior to sharing. It is important to remember that as metadata provided with sequencing data is reduced, the public health utility of the sequence data is also reduced. Some metadata (for example sample collection dates) are extremely important and should not be obscured or withheld without good reason.
-
-
-- 
-  {: .mitigation } 
+{: .mitigation } 
     > Reduce detail of identifying metadata fields in cases where that data is likely to be identifying (ex. submit collection location to state level instead of county level for sparsely populated counties.)
     >
     > {: .cost }
