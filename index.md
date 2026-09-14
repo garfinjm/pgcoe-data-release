@@ -3,29 +3,29 @@ title: PGCoE Considerations for Public Release of Pathogen Data
 layout: minimal
 ---
 
-
 # Considerations for Public Release of Pathogen Genomic Data
 
-**Purpose**
+### Purpose
 
 Public data sharing is a cornerstone of modern infectious disease genomic epidemiology. At the same time, it is critical to protect the health data of individuals and maintain the reputations of public health agencies as reliable sources of information. When onboarding a new sequencing project, agencies must determine which data should be openly shared and which should be withheld to balance the benefits and risks of open data sharing. The purpose of this document is to facilitate internal discussions around public release of pathogen genomic data in public health agencies.
 
-**Usage**
+### Usage
+
 Public health agencies should start by assuming all data will be made public and then apply mitigation strategies and/or withhold data as valid concerns with sharing are identified. This framing ensures that the richest possible data is shared with the public. For example, an agency would choose to withhold the specific birth date of a sampled individual (which they have determined to be too identifying to release) and instead supply the age of that individual (which is harder to trace back to one person).
 
-**Why share data publicly?**
+### Why share data publicly?
 
 Analysis of pathogen genomic data to support surveillance and outbreak response benefits greatly from accessing publicly available sequence data. When an agency is able to contextualize their data with data collected from other jurisdictions, they are better able to understand how outbreaks originated, how infectious disease transmission might be connected across jurisdictions, and how what they’re seeing compares to other areas of the United States. Open data sharing by public health agencies ensures that they give back to the community and system that they benefit from.
 
 There is no one-size-fits-all plan for sharing pathogen genomic data. The technical methods being used, pathogen being examined, geographic and demographic populations the pathogen infects, and severity of the outbreak all factor into risk-reward calculations when determining what data to release, when to release it, and the level of detail to include. For this reason, rather than providing a checklist of data to share, we have outlined five common concerns, particular ways those concerns manifest, and commonly accepted mitigation strategies (where applicable).
 
-**Common Concerns**
+### Common Concerns
 
-1. Publicly released data could be used to identify an individual.
-2. Loss of control around how data are used, analyzed, and communicated after public release.
-3. Inaccurate or misleading data could be released.
-4. Public data release may be restricted and/or required by existing contracts or agreements.
-5. Public data sharing is technically difficult and/or resource intensive.
+1. [Publicly released data could be used to identify an individual.](#concern-1-publicly-released-data-could-be-used-to-identify-an-individual)
+2. [Loss of control around how data are used, analyzed, and communicated after public release.](#concern-2-loss-of-control-around-how-data-are-used-analyzed-and-communicated-after-public-release)
+3. [Inaccurate or misleading data could be released.](#concern-3-inaccurate-or-misleading-data-could-be-released)
+4. [Public data release may be restricted and/or required by existing contracts or agreements.](#concern-4-public-data-release-may-be-restricted-andor-required-by-existing-contracts-or-agreements)
+5. [Public data sharing is technically difficult and/or resource intensive.](#concern-5-public-data-sharing-is-technically-difficult-andor-resource-intensive)
 
 ## Concern 1: Publicly released data could be used to identify an individual.
 
@@ -207,7 +207,7 @@ In addition to institutional factors that must be considered before public data 
 
 Outside of the legal, logistical, and institutional barriers that might hinder an organization from submitting data to a public repository, there can also be technical and logistical barriers to completing the steps required for data sharing. To properly release data, an organization must know what resource they want to use to share data, how data is organized on that resource, and how to format their existing data to be compatible with the resource. Additionally, there can be a learning curve for new users when beginning to sort, filter, and wrangle data into a format which is acceptable for submission to a public repository, and they may not be aware of existing tools and resources to help with that challenge.
 
-PGCOE Response Base Working Group has created [a website to address the most common technical hurdles](https://Update.this.url.eventually) to sharing sequencing data publicly on NCBI. Organizations are strongly encouraged to use this resource in addition to NCBI’s first party documentation to address technical hurdles encountered during data submission.
+PGCOE Response Base Working Group has created [a website to address the most common technical hurdles](https://pgcoe.github.io/NCBI-upload-companion/) to sharing sequencing data publicly on NCBI. Organizations are strongly encouraged to use this resource in addition to NCBI’s first party documentation to address technical hurdles encountered during data submission.
 
 - **Staff are not familiar with data submission process.** Public data sharing repositories like [NCBI](https://www.ncbi.nlm.nih.gov/) and [Pathoplexus](https://pathoplexus.org/) manage users and store data in structures that are not necessarily intuitive to new users. This often slows adoption of these resources by new submitters.
 > {: .mitigation } 
