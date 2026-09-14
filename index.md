@@ -2,7 +2,10 @@
 title: PGCoE Considerations for Public Release of Pathogen Data
 layout: minimal
 ---
-
+<div class="pgcoe-banner">
+  <h2>PGCoE Data Release Considerations</h2>
+  <p>A practical guide for public health agencies balancing public data sharing with privacy, quality, and communications needs.</p>
+</div>
 # Considerations for Public Release of Pathogen Genomic Data
 
 ### Purpose
