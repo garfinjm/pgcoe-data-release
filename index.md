@@ -60,6 +60,7 @@ To protect individual privacy, data submitters must ensure that no information p
   > >
   > > {: .prevalence} 
   > > > Very common when sequencing directly from clinical specimens without an isolation step (ex. targeted tiled amplicon sequencing of a virus from a nasal swab).
+> 
 > {: .mitigation } 
   > > Apply in-silico dehosting software to data before public sharing.
   > >
@@ -68,6 +69,7 @@ To protect individual privacy, data submitters must ensure that no information p
   > >
   > > {: .prevalence} 
   > > > Very common in methods (ex. untargeted genomic sequencing) which produce a large amount of human genomic bycatch. Not typically used when an organism is sequenced from culture.
+> 
 > {: .mitigation } 
   > > Share data types which are less likely to contain human data (ex. assemblies instead of raw reads or aligned reads instead of raw reads)
   > >
@@ -90,6 +92,7 @@ The release of genomic data, and analysis by non-public health entities, can sha
   > >
   > > {: .prevalence} 
   > > > Extremely common for data releases that are likely to be newsworthy. Not as common for low impact or routine projects.
+> 
 > {: .mitigation } 
   > > Engage with external stakeholders (local health departments, policymakers, community leaders, etc.) early and often in discussions around data release. By providing these stakeholders with advance notice and context about the data, public health agencies can prepare them to address public inquiries and concerns effectively.
   > >
@@ -98,6 +101,7 @@ The release of genomic data, and analysis by non-public health entities, can sha
   > >
   > > {: .prevalence} 
   > > > Varies by project and setting.
+> 
 > {: .mitigation } 
   > > Prepare and review data sharing and communication plans when collaborating with academic or private partners prior to public release of data. This collaborative review can help ensure the correct interpretation and the narrative around the findings of the investigation is well-crafted to reduce the risk of miscommunication.
   > >
@@ -141,6 +145,7 @@ While the best practice is to release data as soon as possible after sequencing,
   > >
   > > {: .prevalence} 
   > > > Very common in labs performing laboratory developed tests. It is also generally good practice to build and maintain an understanding of QA standards and principles among staff developing or implementing new tests.
+> 
 > {: .mitigation } 
   > > Ensure that agency QA standards are well documented so that staff can be trained on those standards.
   > >
@@ -160,6 +165,7 @@ While the best practice is to release data as soon as possible after sequencing,
   > > {: .prevalence} 
   > > > Very common during development in the absence of reference material.
 - **Perceived data quality could change as new data emerges.** In developing situations, the perceived quality of data may change as new information becomes available.
+> 
 > {: .mitigation } 
   > > Ongoing communication with stakeholders is critical not only for newly generated data, but also for previously communicated data and findings.
   > >
@@ -168,6 +174,7 @@ While the best practice is to release data as soon as possible after sequencing,
   > >
   > > {: .prevalence} 
   > > > Common.
+> 
 > {: .mitigation } 
   > > Be prepared to update publicly shared data and have a plan to announce any updates to stakeholders.
   > >
@@ -212,6 +219,7 @@ PGCOE Response Base Working Group has created [a website to address the most com
   > >
   > > {: .prevalence} 
   > > > Very rare.
+> 
 > {: .mitigation } 
   > > Utilize existing tools to make data upload easier (ex.* [*SeqSender*](https://github.com/CDCgov/seqsender)*,* [*TOSTADAS*](https://github.com/CDCgov/tostadas)*, etc.)
   > >
@@ -230,6 +238,7 @@ PGCOE Response Base Working Group has created [a website to address the most com
   > >
   > > {: .prevalence} 
   > > > Very common for frequent data submitters, less common in agencies with lower throughput.
+> 
 > {: .mitigation } 
   > > Foster consistency in how data is stored and formatted within the organization.
   > >
