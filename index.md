@@ -4,13 +4,8 @@ layout: minimal
 ---
 
 <div class="pgcoe-banner">
-  <div class="pgcoe-banner-content">
-    <div>
-      <h2>Considerations for Public Release of Pathogen Genomic Data</h2>
-      <p>A practical guide created by the Pathogen Genomics Centers of Excellence (PGCoE) for public health agencies balancing public data sharing with privacy, quality, and communications needs.</p>
-    </div>
-    <img src="/docs/media/pgcoe-network-graphic-element.png" alt="PGCoE logo" class="pgcoe-banner-logo" />
-  </div>
+  <h2>Considerations for Public Release of Pathogen Genomic Data</h2>
+  <p>A practical guide created by the Pathogen Genomics Centers of Excellence (PGCoE) for public health agencies balancing public data sharing with privacy, quality, and communications needs.</p>
 </div>
 
 ### Purpose
