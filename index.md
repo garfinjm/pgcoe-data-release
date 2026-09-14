@@ -41,7 +41,7 @@ To protect individual privacy, data submitters must ensure that no information p
   > >
   > > {: .prevalence} 
   > > > Varies by metadata type, common for geographic information.
-  
+>
 > {: .mitigation } 
   > > Withhold metadata fields in cases where that data is likely to be identifying and there is a **substantial** risk to the organization submitting the data or the individual the data was generated from. In these cases, best practice is to indicate that the data was collected but not shared publicly by using a term like “Not Given” or “Withheld”.
   > >
