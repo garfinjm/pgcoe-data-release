@@ -17,7 +17,7 @@ callouts:
     color: blue
   cost:
     title: Cost
-    color: green
+    color: red
   prevalence:
     title: Prevalence of Strategy
     color: purple

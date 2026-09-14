@@ -38,3 +38,51 @@
   object-fit: contain;
 }
 
+p.mitigation,
+blockquote.mitigation,
+p.mitigation-title,
+blockquote.mitigation-title {
+  border-color: #d9edf7;
+  border-left-color: #055A5E;
+}
+
+p.mitigation::before,
+p.mitigation-title > p:first-child,
+blockquote.mitigation .mitigation-title,
+blockquote.mitigation-title > p:first-child,
+blockquote.mitigation > .mitigation-title {
+  color: #055A5E;
+}
+
+p.cost,
+blockquote.cost,
+p.cost-title,
+blockquote.cost-title {
+  border-color: #fbe9d9;
+  border-left-color: #C65A13;
+}
+
+p.cost::before,
+p.cost-title > p:first-child,
+blockquote.cost .cost-title,
+blockquote.cost-title > p:first-child,
+blockquote.cost > .cost-title {
+  color: #C65A13;
+}
+
+p.prevalence,
+blockquote.prevalence,
+p.prevalence-title,
+blockquote.prevalence-title {
+  border-color: #e7dff7;
+  border-left-color: #4E26AF;
+}
+
+p.prevalence::before,
+p.prevalence-title > p:first-child,
+blockquote.prevalence .prevalence-title,
+blockquote.prevalence-title > p:first-child,
+blockquote.prevalence > .prevalence-title {
+  color: #4E26AF;
+}
+
